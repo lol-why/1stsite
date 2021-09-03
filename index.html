@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Sweet-Skinshop</title>
+<link rel="stylesheet" href="css/main.css">
+<link rel="javascript" href="js/script.js">
+</head>
+<body>
+<header>
+</div>
+<div class="dws">
+<a href="#" class="butt">Магазин</a>
+</div>
+<div id="logo" onclick="slowScroll('#top')">
+<span>Sweet-Skinshop</span>
+<div class="dws-menu">
+<ul class="dws-ul">
+	<li class="dws-li"><a href="https://vk.com/public201776300"><i class="fa fa-vk"aria-hidden="true"></i>Контакты</a></li>
+	<li class="dws-li"><a href="#"><i class="fa fa-comments-o"aria-hidden="true"></i>FAQ</a></li>
+<li class="dws-li"><a href="#"><i class="fa fa-file-text-o"aria-hidden="true"></i>Новости</a></li>
+</ul>
+</div>
+</header>
+
+<div id="top">
+<h1>Топовый музон</h1>
+<h3>только у нас!</h3>
+</div>
+
+<div id="main">
+<div class="intro">
+<h2>Лучший магазин по CsGo!</h2>
+<span>Много скинов!</span>
+</div>
+<div class="text">
+<span>Ваши купленные вещи мы отправим в сервисы!</span>
+</div>
+</div>
+<div id="overview">
+<h2>Преимущества</h2>
+<h4>100% гарантия на нашем сайте!</h4>
+
+<div class="img">
+<img src="https://se7en.ws/wp-content/uploads/2016/11/cs-go-all-skins.png" alt="">
+<span>Шикарные скины по лучшей цене!</span>
+</div>
+<div class="img">
+<img src="https://habrastorage.org/getpro/geektimes/post_images/a98/d5f.." alt="">
+<span>Лучший выбор только у нас!</span>
+</div>
+</div>
+
+<div id="contacts">
+<center><h5>Обратная связь</h5></center>
+<form id="form_input">
+<label for="message">Отзыв о сайте <span>*</span></label><br>
+<input type="message" placeholder="Напишите отзыв сюда" name="message" id="message"><br>
+<div id="mess_send" class="btn">Отправить</div>
+</form>
+</div>
+
+<div id="faq">
+<div>
+<span class="title">Оплата</span><br>
+<span class="heading">Как будет проходить оплата?</span>
+<p>Qiwi, WebMoney.</p>
+</div>
+<div>
+<span class="title">Информация</span><br>
+<span class="heading">Что входит в услуги сервиса</span>
+<p>Красивые скины по выгодной цене в популярной игре CsGo.</p>
+</div>
+<div>
+<span class="title">Гарантии</span><br>
+<span class="heading">Какие гарантии есть?</span>
+<p>Если что-то пойдет не так с товаром, или он не отправится к вам в сервисы, мы вернём вам ваши деньги на указанную вами систему платежа.</p>
+</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.."></script>
+<script>
+function slowScroll(id) {
+$('html, body').animate({
+scrollTop: $(id).offset().top
+}, 500);
+}
+
+$(document).on("scroll", function () {
+if($(window).scrollTop() === 0)
+$("header").removeClass("fixed");
+else
+$("header").attr("class", "fixed");
+});
+</script>
+
+</body>
+</html>
